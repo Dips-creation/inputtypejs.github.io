@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/9734662/pexels-photo-9734662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            padding: 200px 500px;
+            
+
+        }
+
+        #container {
+            box-shadow: 0 0 20px green;
+            position: absolute;
+
+            text-align: center;
+            align-items: center;
+            width: 400px;
+            height: 200px;
+
+        }
+        button{
+            border: indianred;
+            color: rgb(252, 0, 0);
+        }
+    </style>
+    <script>
+        function gm(){
+            // var gmRef = document.getElementById("gm")
+            var hRef = document.getElementById("h")
+            var pReff = document.getElementById("pReff")
+            hRef.innerText="Good Morning"
+            hRef.style="color:blue"
+            pReff.innerText="Dip's"
+            pReff.style="color:green"
+            
+            
+        }
+        function ge(){
+            var hRef = document.getElementById("h")
+            var pReff = document.getElementById("pReff")
+            hRef.innerText="Good Morning"
+            hRef.style="color:green"
+            pReff.innerText="Dip's"
+            pReff.style="color:red"
+        }
+        function gn(){
+            var hRef = document.getElementById("h")
+            var pReff = document.getElementById("pReff")
+            hRef.innerText="Good Morning"
+            hRef.style="color:red"
+            pReff.innerText="Dip's"
+            pReff.style="color:blue"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- <span id="pRef">Hiii</span>&nbsp;<span>Abhiee</span> -->
+        <h2 id="h">Hello Dips</h2><h2 id="pReff"></h2>
+        <!-- <h2 id="pRef"></h2> -->
+        <!-- <span id="pRef"></span> -->
+
+        <button id="gm" onclick="gm()">Good Morning</button>
+        <button id="ge" onclick="ge()">Good Evening</button>
+        <button id="gn" onclick="gn()">Good Night</button>
+
+
+    </div>
+</body>
+
+</html>
